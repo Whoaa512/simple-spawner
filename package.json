@@ -1,0 +1,28 @@
+{
+  "name": "simple-spawner",
+  "version": "1.0.0",
+  "description": "spawn a command and pipe the output back to std{in,out,err}",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Whoaa512/simple-spawner.git"
+  },
+  "keywords": [
+    "spawn",
+    "gulp",
+    "stream",
+    "pipe"
+  ],
+  "author": "C.J. Winslow <whoaa512@gmail.com> (https://github.com/whoaa512)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Whoaa512/simple-spawner/issues"
+  },
+  "homepage": "https://github.com/Whoaa512/simple-spawner",
+  "dependencies": {
+    "simple-time-log": "1.0.0"
+  }
+}
