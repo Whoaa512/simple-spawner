@@ -1,6 +1,6 @@
 {
   "name": "simple-spawner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "spawn a command and pipe the output back to std{in,out,err}",
   "main": "index.js",
   "scripts": {

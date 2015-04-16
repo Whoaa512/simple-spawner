@@ -8,7 +8,7 @@ var spawn = require('child_process').spawn
   , log = require('simple-time-log')
 
 module.exports = function simpleSpawner(cmd) {
-  var args, options
+  var args, options, isOptionsEmpty
 
   if (Array.isArray(arguments[1])) {
     args = arguments[1].slice(0)
@@ -21,8 +21,12 @@ module.exports = function simpleSpawner(cmd) {
     options = arguments[1]
   }
   if (options === undefined) options = {}
+  isOptionsEmpty = Object.keys(options).length === 0
 
-  log("Using options:", options)
+  if (!isOptionsEmpty) {
+    log("Spawn options:", options)
+  }
+
   log("Spawning: " + cmd + " " + (args.join(' ')))
   var spawnedProcess = spawn(cmd, args, options)
   spawnedProcess.stdout.pipe(process.stdout)
